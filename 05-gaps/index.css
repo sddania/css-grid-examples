@@ -1,0 +1,62 @@
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  
+  grid-template-areas: 
+    "head head head"
+    "side main detail"
+    "side foot foot";
+
+  gap: 10px 15px;
+  
+  /* 
+  equivalent to:
+  
+  row-gap: 10px;
+  column-gap: 15px; 
+  */
+  
+  /* 
+  obsolete (IE):
+  
+  gird-gap: 10px 15px;
+  
+  grid-row-gap: 10px;
+  grid-column-gap: 15px; 
+  */
+}
+
+.item {
+  padding: 18px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.header {
+  grid-area: head;
+  background-color: #f1c40f;
+}
+.detail {
+  grid-area: detail;
+  background-color: green;
+}
+
+.sidebar {
+  grid-area: side;
+  background-color: lightcoral;
+}
+
+.main {
+  grid-area: main;
+  background-color: lightskyblue;
+}
+
+.footer {
+  grid-area: foot;
+  background-color: lightgreen;
+}

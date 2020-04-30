@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+}
+
+.item-1 {
+  background-color: orchid;
+}
+.item-2 {
+  background-color: brown;
+}
+.item-3 {
+  background-color: black;
+}
+.item-4 {
+  background-color: gold;
+}
+
+.item-5 {
+  grid-column: 4;
+  grid-row: 1 / 3;
+  background-color: forestgreen;
+}
