@@ -3,7 +3,8 @@
   height: 100vh;
   width: 100vw;
 
-  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-auto-flow: row;
 }
 
